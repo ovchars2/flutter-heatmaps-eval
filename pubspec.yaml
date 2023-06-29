@@ -1,0 +1,55 @@
+name: map_heatmap
+description: Flutter Heatmaps.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.5
+  flutter_map: ^4.0.0
+  flutter_map_heatmap: ^0.0.3
+  latlong2: any
+
+  google_maps_flutter:
+    git:
+      url: https://github.com/Rexios80/packages_flutter.git
+      ref: 4ed0d610df1aabdaf10c6a54cb7f8a351ff24b7f
+      path: 'packages/google_maps_flutter/google_maps_flutter'
+
+dependency_overrides:
+  google_maps_flutter_android:
+    git:
+      url: https://github.com/Rexios80/packages_flutter.git
+      ref: 4ed0d610df1aabdaf10c6a54cb7f8a351ff24b7f
+      path: 'packages/google_maps_flutter/google_maps_flutter_android'
+  google_maps_flutter_ios:
+    git:
+      url: https://github.com/Rexios80/packages_flutter.git
+      ref: 4ed0d610df1aabdaf10c6a54cb7f8a351ff24b7f
+      path: 'packages/google_maps_flutter/google_maps_flutter_ios'
+  google_maps_flutter_platform_interface:
+    git:
+      url: https://github.com/Rexios80/packages_flutter.git
+      ref: 4ed0d610df1aabdaf10c6a54cb7f8a351ff24b7f
+      path: 'packages/google_maps_flutter/google_maps_flutter_platform_interface'
+  google_maps_flutter_web:
+    git:
+      url: https://github.com/Rexios80/packages_flutter.git
+      ref: 4ed0d610df1aabdaf10c6a54cb7f8a351ff24b7f
+      path: 'packages/google_maps_flutter/google_maps_flutter_web'
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/strava_coords.json
+    - assets/leaflet-logo.png
